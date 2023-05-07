@@ -38,7 +38,7 @@ char *get_swatch_time(char *date_time) {
     double swatch_time = (double)total_seconds / 86.4;
 
     // Dynamically allocate memory for an array of 6 characters
-    char *swatch_str = malloc(6 * sizeof(char));
+    char *swatch_str = malloc(20 * sizeof(char));
 
     // Format the datetime
     snprintf(swatch_str, 20, "%04d-%02d-%02d @%03.0f",
